@@ -62,6 +62,8 @@ public class RangeSumQueryImmutable {
 
     /**
      * 前缀和（考虑到题目会计算多次，所以采用计算前缀和的1方式避免重复计算）
+     * 这里需注意数组的特点，前缀考虑是索引还是位置
+     * 避免直接地赋值
      */
     static class NumArray2 {
 
