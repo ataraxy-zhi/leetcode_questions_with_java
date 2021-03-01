@@ -59,4 +59,24 @@ public class RangeSumQueryImmutable {
             return sum;
         }
     }
+
+    /**
+     * 前缀和（考虑到题目会计算多次，所以采用计算前缀和的1方式避免重复计算）
+     */
+    static class NumArray2 {
+
+        int[] preSum;
+
+        public NumArray2(int[] nums) {
+            int length=nums.length;
+            preSum =new int[length+1];
+            for(int i=0;i<length;i++){
+                preSum[i+1]=preSum[i]+nums[i];
+            }
+        }
+
+        public int sumRange(int i, int j) {
+            return preSum[j+1]-preSum[i];
+        }
+    }
 }
