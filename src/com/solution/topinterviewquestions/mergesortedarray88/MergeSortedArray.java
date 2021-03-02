@@ -96,7 +96,7 @@ public class MergeSortedArray {
 
 
         /**
-         * 借助辅助数组及指针，从后面比较赋值   简化代码
+         * 借助辅助数组及指针，从后面比较赋值以节省空间
          */
         public void merge2(int[] nums1, int m, int[] nums2, int n) {
 
