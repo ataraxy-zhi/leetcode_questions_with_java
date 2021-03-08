@@ -1,4 +1,4 @@
-package com.solution.pointswodatoffer;
+package com.solution.pointswodatoffer.duplicatenumberinarray3;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +27,7 @@ import java.util.Map;
  * @Author
  * @Date 2021/3/8 15:09
  */
-public class DuplicateNumberInArray3 {
+public class DuplicateNumberInArray {
 
 }
 
