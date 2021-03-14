@@ -55,15 +55,19 @@ class Solution {
                 || j < 0 || board[i][j] != word[k]) {
             return false;
         }
+
         if (k == word.length - 1) {
             return true;
         }
+
         board[i][j] = '\0';
         boolean res = dfs(board, word, i + 1, j, k + 1) ||
                 dfs(board, word, i - 1, j, k + 1) ||
                 dfs(board, word, i, j + 1, k + 1) ||
                 dfs(board, word, i, j - 1, k + 1);
+
         board[i][j] = word[k];
+
         return res;
     }
 }
