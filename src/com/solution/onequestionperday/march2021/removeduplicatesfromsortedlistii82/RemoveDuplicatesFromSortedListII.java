@@ -70,24 +70,30 @@ class ListNode {
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next==null) {
             return head;
         }
 
-        ListNode dummy = new ListNode(0, head);
+        // 有可能会删除第一个节点（头指针），所以事先定义一个头节点
+        ListNode p = new ListNode(0, head);
+        ListNode cur = p;
 
-        ListNode cur = dummy;
         while (cur.next != null && cur.next.next != null) {
+            // 有重复
             if (cur.next.val == cur.next.next.val) {
+                // 保存重复节点中第一个的值（后续会删除该节点）
                 int x = cur.next.val;
+                // 删除所有与第一个（指的是相同节点排在前面第一个的）重复的节点（包括其本身）
                 while (cur.next != null && cur.next.val == x) {
                     cur.next = cur.next.next;
                 }
             } else {
+                // 无重复则判断下一个
+
                 cur = cur.next;
             }
         }
 
-        return dummy.next;
+        return p.next;
     }
 }
