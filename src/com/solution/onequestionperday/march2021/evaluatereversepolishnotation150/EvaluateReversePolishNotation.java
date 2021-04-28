@@ -1,5 +1,8 @@
 package com.solution.onequestionperday.march2021.evaluatereversepolishnotation150;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * 150. Evaluate Reverse Polish Notation 
  * Evaluate the value of an arithmetic
@@ -86,27 +89,26 @@ class Solution {
     public int evalRPN(String[] tokens) {
         Deque<Integer> stack = new LinkedList<Integer>();
         int n = tokens.length;
-        for (int i = 0; i < n; i++) {
-            String token = tokens[i];
+        for (String token : tokens) {
             if (isNumber(token)) {
                 stack.push(Integer.parseInt(token));
             } else {
                 int num2 = stack.pop();
                 int num1 = stack.pop();
                 switch (token) {
-                case "+":
-                    stack.push(num1 + num2);
-                    break;
-                case "-":
-                    stack.push(num1 - num2);
-                    break;
-                case "*":
-                    stack.push(num1 * num2);
-                    break;
-                case "/":
-                    stack.push(num1 / num2);
-                    break;
-                default:
+                    case "+":
+                        stack.push(num1 + num2);
+                        break;
+                    case "-":
+                        stack.push(num1 - num2);
+                        break;
+                    case "*":
+                        stack.push(num1 * num2);
+                        break;
+                    case "/":
+                        stack.push(num1 / num2);
+                        break;
+                    default:
                 }
             }
         }

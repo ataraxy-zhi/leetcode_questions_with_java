@@ -70,6 +70,9 @@ package com.solution.onequestionperday.april2021.sumofsquarenumbers633;
  * @Date 2021/4/28 8:26
  */
 public class SumOfSquareNumbers {
+    public static void main(String[] args) {
+        System.out.println(5.0 == 5);
+    }
 }
 
 
@@ -79,6 +82,27 @@ class Solution {
             double b = Math.sqrt(c - a * a);
             if (b == (int) b) {
                 return true;
+            }
+        }
+        return false;
+    }
+}
+
+/**
+ * 双指针
+ */
+class Solution2 {
+    public boolean judgeSquareSum(int c) {
+        int left = 0;
+        int right = (int) Math.sqrt(c);
+        while (left <= right) {
+            int sum = left * left + right * right;
+            if (sum == c) {
+                return true;
+            } else if (sum > c) {
+                right--;
+            } else {
+                left++;
             }
         }
         return false;
