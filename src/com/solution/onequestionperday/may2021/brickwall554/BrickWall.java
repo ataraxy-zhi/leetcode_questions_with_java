@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.may2021.employeeimportance690.may2021.brickwall554;
+package com.solution.onequestionperday.may2021.brickwall554;
 
 import java.util.HashMap;
 import java.util.List;
