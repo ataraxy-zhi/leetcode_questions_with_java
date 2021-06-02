@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.june2021;
+package com.solution.onequestionperday.june2021.oqpd1744;
 
 /**
  * @ClassName Oqpd1744
