@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.july2021;
+package com.solution.onequestionperday.july2021.oppd1711;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,7 +40,7 @@ import java.util.Map;
  * @Author yi
  * @Date 2021/7/7 21:30
  */
-public class oqpd1711 {
+public class Oqpd1711 {
 }
 
 
