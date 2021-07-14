@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.july2021.oqpd;
+package com.solution.onequestionperday.july2021.oqpd214;
 
 import java.util.*;
 
