@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.july2021.oppd1711;
+package com.solution.onequestionperday.july2021.oqpd1711;
 
 import java.util.HashMap;
 import java.util.Map;
