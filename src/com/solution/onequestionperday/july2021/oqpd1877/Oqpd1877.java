@@ -47,6 +47,11 @@ public class Oqpd1877 {
 }
 
 class Solution {
+    /**
+     *
+     * @param nums
+     * @return
+     */
     public int minPairSum(int[] nums) {
         int n = nums.length;
         int res = 0;
