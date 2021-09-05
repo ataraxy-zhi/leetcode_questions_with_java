@@ -1,7 +1,6 @@
 package com.solution.medium;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * 5864. 游戏中弱角色的数量
