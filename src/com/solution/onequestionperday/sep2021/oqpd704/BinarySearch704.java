@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.sep2021;
+package com.solution.onequestionperday.sep2021.oqpd704;
 
 /**
  * 704. 二分查找
