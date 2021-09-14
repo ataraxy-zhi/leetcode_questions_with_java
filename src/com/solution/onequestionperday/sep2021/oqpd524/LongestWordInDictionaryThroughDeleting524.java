@@ -39,7 +39,7 @@ public class LongestWordInDictionaryThroughDeleting524 {
 
 class Solution {
     public String findLongestWord(String s, List<String> dictionary) {
-        // 长度降序，字典升序
+        // 字符串按长度降序，按字典升序
         dictionary.sort((str1, str2) -> {
             if (str1.length() != str2.length()) {
                 return str2.length() - str1.length();
