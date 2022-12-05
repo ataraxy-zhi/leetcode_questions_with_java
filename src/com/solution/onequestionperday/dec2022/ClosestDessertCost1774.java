@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.nov2022;
+package com.solution.onequestionperday.dec2022;
 
 import java.util.Arrays;
 

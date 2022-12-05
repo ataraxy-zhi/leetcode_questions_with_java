@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.nov2022;
+package com.solution.onequestionperday.dec2022;
 
 /**
  * 1769. 移动所有球到每个盒子所需的最小操作数

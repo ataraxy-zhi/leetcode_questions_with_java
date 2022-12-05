@@ -1,4 +1,4 @@
-package com.solution.onequestionperday.nov2022;
+package com.solution.onequestionperday.dec2022;
 
 /**
  * 1796. 字符串中第二大的数字
